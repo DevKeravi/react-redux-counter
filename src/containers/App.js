@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Buttons from "../components/Buttons";
 import CounterListContainer from "./CounterListContainer";
 
-import { connect } from "react-reudx";
+import { connect } from "react-redux";
 import * as actions from "../actions";
 
 import { getRandomColor } from "../utils";

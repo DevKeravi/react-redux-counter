@@ -25,3 +25,5 @@ Buttons.defaultProps = {
   onCreate: () => console.warn("onCreate not Defined"),
   onRemove: () => console.warn("onCreate not Defined"),
 };
+
+export default Buttons;

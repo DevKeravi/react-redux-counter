@@ -19,7 +19,7 @@ const CounterList = ({ counters, onIncrement, onDecrement, onSetColor }) => {
   return <div className="CounterList">{counterList}</div>;
 };
 
-counterList.PropTypes = {
+CounterList.propTypes = {
   counters: PropTypes.arrayOf(
     PropTypes.shape({
       color: PropTypes.string,
@@ -31,7 +31,7 @@ counterList.PropTypes = {
   onSetColor: PropTypes.func,
 };
 
-counterList.defaultProps = {
+CounterList.defaultProps = {
   counters: [],
   onIncrement: () => console.warn("onIncrement not defined"),
   onDecrement: () => console.warn("onDecrement not defined"),
