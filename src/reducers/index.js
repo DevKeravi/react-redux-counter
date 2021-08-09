@@ -25,7 +25,7 @@ function counter(state = initialState, action) {
       };
     case types.REMOVE:
       return {
-        counters: counters.slic(0, counters.length - 1),
+        counters: counters.slice(0, counters.length - 1),
       };
     case types.INCREMENT:
       return {
@@ -33,7 +33,7 @@ function counter(state = initialState, action) {
           ...counters.slice(0, action.index),
           {
             ...counters[action.index],
-            number: counters[action.index].bumer + 1,
+            number: counters[action.index].number + 1,
           },
           ...counters.slice(action.index + 1, counters.length),
         ],
